@@ -19,4 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('applications', ApplicationController::class)->except(['edit', 'create']);
+Route::apiResource('applications', ApplicationController::class)->except(['edit', 'create']);

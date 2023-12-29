@@ -9,6 +9,10 @@ class Application extends Model
 {
     use HasFactory;
 
+    protected $fillable = false;
+
+    public const DEFAULT = 'Active';
+
     public const STATUS = [
         'Active' => 'Активный',
         'Resolved' => 'Завершенный',
